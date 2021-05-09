@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // CODE GOES HERE vvv
         
+        console.log(entry);
+
         let mainSection = document.getElementsByClassName(main);
         newPost = entry;
         mainSection.append(newPost);
