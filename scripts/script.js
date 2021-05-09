@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         console.log(entry);
 
-        let mainSection = document.getElementsByClassName(main);
+        let mainSection = document.getElementsByClassName('main');
         newPost = entry;
         mainSection.append(newPost);
 
