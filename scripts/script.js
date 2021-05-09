@@ -28,6 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // CODE GOES HERE vvv
         
+        let mainSection = document.querySelector('main');
+
+        mainSection.append(entry);
+
         console.log(entry);
 
         // CODE GOES HERE ^^^
