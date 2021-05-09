@@ -30,9 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         let mainSection = document.querySelector('main');
 
-        mainSection.append(entry);
+        newPost = entry;
 
-        console.log(entry);
+        mainSection.append(newPost);
+
+        console.log(newPost);
 
         // CODE GOES HERE ^^^
 
