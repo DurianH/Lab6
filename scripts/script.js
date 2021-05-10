@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         let main = document.querySelector('main');
 
-        newPost = document.createElement('template');
+        newPost = document.createElement('journal-entry');
         newPost.entry = entry;
 
         main.append(newPost);
