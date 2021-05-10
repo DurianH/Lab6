@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let shadowDom = newPost.shadowRoot;
 
-        let article = shadowDom.firstChild;
+        let article = shadowDom.querySelector('entry');
 
         let img = document.createElement('img');
         img.className = 'entry-image';
