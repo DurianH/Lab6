@@ -75,19 +75,23 @@ class JournalEntry extends HTMLElement {
     // CODE GOES HERE
     let article = document.createElement('article');
     article.className = 'entry';
-    this.shadowRoot.append(article);
 
     let title = document.createElement('h2');
     title.innerHTML = entry.title;
-    this.shadowRoot.appendChild(title);
+    article.append(title);
+    this.shadowRoot.append(title);
     
     let date = document.createElement('p');
     date.innerHTML = entry.date;
+    article.append(date);
     this.shadowRoot.append(date);
 
     let content = document.createElement('p');
     content.innerHTML = entry.content;
+    article.append(content);
     this.shadowRoot.append(content);
+
+    this.shadowRoot.append(article);
 
     if (entry.image) {
       let entryImage;
