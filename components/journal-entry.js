@@ -74,6 +74,9 @@ class JournalEntry extends HTMLElement {
     
     // CODE GOES HERE
     this.setAttribute('entry', entry);
+    this.title = entry.title;
+    this.date = entry.date;
+    this.content = entry.content;
 
     if (entry.image) {
       let entryImage;
