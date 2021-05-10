@@ -73,9 +73,10 @@ class JournalEntry extends HTMLElement {
      */
     
     // CODE GOES HERE
-    let title = document.createElement('h2');
+    let title = document.getElementsByClassName('entry-title');
+    //let title = document.createElement('h2');
     title.innerHTML = entry.title;
-    this.shadowRoot.append(title);
+    //this.shadowRoot.append(title);
     
     let date = document.createElement('p');
     date.innerHTML = entry.date;
@@ -123,7 +124,7 @@ class JournalEntry extends HTMLElement {
       // CODE GOES HERE vvv
       entryAudio = document.createElement('audio');
       entryAudio.className = 'entry-audio';
-      //entryAudio.src = entry.audio;
+      entryAudio.src = entry.audio;
       entryAudio.controls = true;
       this.shadowRoot.appendChild(entryAudio);
       // CODE GOES HERE ^^^
