@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let main = document.querySelector('main');
 
         newPost = document.createElement('div');
-        newPost.innerHTML = entry;
+        newPost.innerHTML = Object.values(entry);
 
         main.append(newPost);
 
