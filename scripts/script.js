@@ -37,8 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let img = document.createElement('img');
         img.className = 'entry-image';
         img.src = entry.image.src;
-        img.alt = entry.image.alt;
-        //shadowDom.appendChild(img);
+        //img.alt = entry.image.alt;
 
         main.append(newPost);
 
