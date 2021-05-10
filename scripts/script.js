@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
           //newPost.append(audio);
         }
 
-        //main.append(newPost);
+        main.append(newPost);
         // CODE GOES HERE ^^^
 
 
