@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
         img.className = 'entry-image';
         img.src = entry.image.src;
         img.alt = entry.image.alt;
-        newPost.append(img);
 
         main.append(newPost);
+        main.append(img);
 
         // CODE GOES HERE ^^^
 
