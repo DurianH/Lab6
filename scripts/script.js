@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         img.className = 'entry-image';
         img.src = entry.image.src;
         img.alt = entry.image.alt;
-        newPost.append(img);
+        //newPost.append(img);
 
 
         if(entry.audio != null) {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
           audio.className = 'entry-audio';
           audio.src = entry.audio;
           audio.controls = true;
-          newPost.append(audio);
+          //newPost.append(audio);
         }
 
         main.append(newPost);
