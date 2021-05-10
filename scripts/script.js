@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(entry.audio != null) {
           let audio = document.createElement('audio');
           audio.className = 'entry-audio';
-          audio.src = entry.audio.src;
+          audio.src = entry.audio;
           audio.controls = true;
         }
         // CODE GOES HERE ^^^
