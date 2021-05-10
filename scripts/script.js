@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let newPost;  
 
         // CODE GOES HERE vvv
-        let main = document.querySelector('main');
+        //let main = document.querySelector('main');
 
         newPost = document.createElement('journal-entry');
         newPost.entry = entry;
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
           //newPost.append(audio);
         }*/
 
-        main.append(newPost);
+        //main.append(newPost);
         // CODE GOES HERE ^^^
 
 
