@@ -39,6 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = entry.image.src;
         img.alt = entry.image.alt;
 
+        let audio = document.createElement('audio');
+        audio.className = 'entry-audio';
+        audio.src = entry.audio.src;
+
         main.append(newPost);
 
         // CODE GOES HERE ^^^
