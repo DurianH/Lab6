@@ -35,13 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
         img.alt = entry.image.alt;
 
 
-        let audio = document.createElement('audio');
-        audio.className = 'entry-audio';
         if(entry.audio) {
+          let audio = document.createElement('audio');
+          audio.className = 'entry-audio';
           audio.src = entry.audio.src;
+          audio.controls = true;
         }
-        audio.controls = true;
-
         // CODE GOES HERE ^^^
 
 

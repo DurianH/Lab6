@@ -126,7 +126,6 @@ class JournalEntry extends HTMLElement {
       entryAudio.src = entry.audio.src;
       entryAudio.controls = true;
       this.shadowRoot.appendChild(entryAudio);
-      console.log(entryAudio.src);
       // CODE GOES HERE ^^^
       
 
