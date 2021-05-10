@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         img.alt = entry.image.alt;
 
 
-        if(entry.audio) {
+        if(entry.audio != null) {
           let audio = document.createElement('audio');
           audio.className = 'entry-audio';
           audio.src = entry.audio.src;
