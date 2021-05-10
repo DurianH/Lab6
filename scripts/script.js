@@ -34,11 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let shadowDom = newPost.shadowRoot;
 
+        let article = shadowDom.firstChild;
+
         let img = document.createElement('img');
         img.className = 'entry-image';
         img.src = entry.image.src;
         img.alt = entry.image.alt;
-        shadowDom.appendChild(img);
+        article.appendChild(img);
 
         main.append(newPost);
 
