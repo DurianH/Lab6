@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
           audio.src = entry.audio.src;
         }
         else {
-          audio.src = null;
+          audio.src = '';
         }
         audio.controls = true;
 
