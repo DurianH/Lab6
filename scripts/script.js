@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         newPost = document.createElement('div');
         newPost.innerHTML = entry;
 
-        mainSection.append(newPost);
+        main.append(newPost);
 
         console.log(newPost);
 
