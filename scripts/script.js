@@ -34,8 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let shadowDom = newPost.shadowRoot;
 
-        shadowDom.appendChild(img);
-
         let article = shadowDom.querySelector("type=['article']");
 
         
