@@ -26,9 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let newPost;  
 
         // CODE GOES HERE vvv
-        
-        let main = document.querySelector('main');
-
         newPost = document.createElement('journal-entry');
         newPost.entry = entry;
 
@@ -40,14 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = entry.image.src;
         img.alt = entry.image.alt;
 
-        if(entry.audio) {
-          let audio = document.createElement('audio');
-          audio.className = 'entry-audio';
-          audio.src = entry.audio.src;
-          audio.controls = true;
-        }
 
-        main.append(newPost);
+        let audio = document.createElement('audio');
+        audio.className = 'entry-audio';
+        audio.src = entry.audio.src;
+        audio.controls = true;
 
         // CODE GOES HERE ^^^
 
