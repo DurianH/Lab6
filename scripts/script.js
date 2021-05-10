@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let audio = document.createElement('audio');
         audio.className = 'entry-audio';
-        if(entry.audio.src != null) {
+        if(entry.audio != null) {
           audio.src = entry.audio.src;
         }
         else {

@@ -123,7 +123,7 @@ class JournalEntry extends HTMLElement {
       // CODE GOES HERE vvv
       entryAudio = document.createElement('audio');
       entryAudio.className = 'entry-audio';
-      if(entry.audio.src != null) {
+      if(entry.audio != null) {
         entryAudio.src = entry.audio.src;
       }
       else {
