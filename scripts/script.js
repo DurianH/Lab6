@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         let mainSection = document.querySelector('main');
 
-        newPost = JSON.parse(entry);
+        newPost = entry;
 
         mainSection.append(newPost);
 
