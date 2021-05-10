@@ -28,9 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // CODE GOES HERE vvv
         
-        let mainSection = document.querySelector('main');
+        let main = document.querySelector('main');
 
-        newPost = entry;
+        newPost = document.createElement('div');
+        newPost.innerHTML = entry;
 
         mainSection.append(newPost);
 
