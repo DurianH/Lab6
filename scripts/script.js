@@ -34,13 +34,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let shadowDom = newPost.shadowRoot;
 
-        let article = shadowDom.querySelector('article');
+        let img = document.createElement('img');
+        img.setAttribute('class', 'entry-image');
+        img.setAttribute('src', entry.img.src);
+        img.setAttribute('alt', entry.img.alt);
 
+        shadowDom.appendChild(img);
+
+        /*
+        let article = shadowDom.querySelector("type=['article']");
+
+        
         let img = document.createElement('img');
         img.className = 'entry-image';
         img.src = entry.image.src;
         img.alt = entry.image.alt;
         article.append(img);
+        */
 
         main.append(newPost);
 
