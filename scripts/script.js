@@ -29,12 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         let main = document.querySelector('main');
 
-        newPost = document.createElement('journal-entry');
+        newPost = document.createElement('template');
         newPost.entry = entry;
-        
-        let image = newPost.firstChild;
-        image.src = entry.image.src;
-        image.alt = 'some alternate text';
 
         main.append(newPost);
 
