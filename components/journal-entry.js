@@ -73,13 +73,10 @@ class JournalEntry extends HTMLElement {
      */
     
     // CODE GOES HERE
-    this.log.push(entry.title);
-    this.log.push(entry.date);
-    this.log.push(entry.content);
-    /*this.setAttribute('entry', entry);
+    //this.setAttribute('entry', entry);
     this.title = entry.title;
     this.date = entry.date;
-    this.content = entry.content;*/
+    this.content = entry.content;
 
     if (entry.image) {
       let entryImage;
