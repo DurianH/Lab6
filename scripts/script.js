@@ -32,14 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
         newPost = document.createElement('journal-entry');
         newPost.entry = entry;
 
-        let article = newpost.getElementsByClassName('entry');
+        let article = newPost.getElementsByClassName('entry');
 
         let img = article.getElementsByClassName('entry-image');
         img.src = entry.image.src;
         img.alt = entry.image.alt;
 
         main.append(newPost);
-        
 
         // CODE GOES HERE ^^^
 
