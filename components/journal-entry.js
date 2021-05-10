@@ -86,7 +86,7 @@ class JournalEntry extends HTMLElement {
 
       // CODE GOES HERE vvv
       entryImage = document.createElement('img');
-      entryImage.className = entry.audio.className;
+      entryImage.className = 'entry-image';
       entryImage.src = entry.image.src;
       entryImage.alt = entry.image.alt;
       this.shadowRoot.appendChild(entryImage);
@@ -113,7 +113,7 @@ class JournalEntry extends HTMLElement {
       // CODE GOES HERE vvv
 
       entryAudio = document.createElement('audio');
-      entryAudio.className = entry.audio.className;
+      entryAudio.className = 'entry-audio';
       entryAudio.src = entry.audio.src;
       entryAudio.controls = true;
       this.shadowRoot.appendChild(entryAudio);
