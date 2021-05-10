@@ -1,6 +1,6 @@
 // script.js
 
-window.logCheckpoints = false // set to true/false to add/remove checkpoint logs to clear room for your own debugging
+window.logCheckpoints = true // set to true/false to add/remove checkpoint logs to clear room for your own debugging
 
 
 // script.js
@@ -25,12 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
        
         let newPost;  
 
-
         // CODE GOES HERE vvv
         
         let main = document.querySelector('main');
 
-        newPost = document.createElement('JournalEntry');
+        newPost = document.createElement('journal-entry');
         newPost.innerHTML = Object.values(entry);
 
         main.append(newPost);
