@@ -74,8 +74,8 @@ class JournalEntry extends HTMLElement {
     
     // CODE GOES HERE
     //this.setAttribute('entry', entry);
-    title = document.createElement('h2');
-    title = entry.title;
+    let title = document.createElement('h2');
+    title.innerHTML = entry.title;
     this.shadowRoot.append(title);
     
     this.date = entry.date;
