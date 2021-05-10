@@ -73,10 +73,13 @@ class JournalEntry extends HTMLElement {
      */
     
     // CODE GOES HERE
-    this.setAttribute('entry', entry);
+    this.log.push(entry.title);
+    this.log.push(entry.date);
+    this.log.push(entry.content);
+    /*this.setAttribute('entry', entry);
     this.title = entry.title;
     this.date = entry.date;
-    this.content = entry.content;
+    this.content = entry.content;*/
 
     if (entry.image) {
       let entryImage;
@@ -114,13 +117,11 @@ class JournalEntry extends HTMLElement {
        */
 
       // CODE GOES HERE vvv
-
       entryAudio = document.createElement('audio');
       entryAudio.className = 'entry-audio';
       entryAudio.src = entry.audio.src;
       entryAudio.controls = true;
       this.shadowRoot.appendChild(entryAudio);
-
       // CODE GOES HERE ^^^
       
 
