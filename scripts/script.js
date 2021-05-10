@@ -43,6 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if(audio.src != null) {
           audio.src = entry.audio.src;
         }
+        else {
+          audio.src = null;
+        }
         audio.controls = true;
 
         // CODE GOES HERE ^^^
