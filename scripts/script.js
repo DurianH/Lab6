@@ -34,14 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let shadowDom = newPost.shadowRoot;
 
-        /*let img = document.createElement('img');
-        img.className = 'entry-image';
-        img.src = entry.img.src;
-        img.alt = entry.img.alt;
-
         shadowDom.appendChild(img);*/
 
-        /*
         let article = shadowDom.querySelector("type=['article']");
 
         
@@ -50,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = entry.image.src;
         img.alt = entry.image.alt;
         article.append(img);
-        */
 
         main.append(newPost);
 

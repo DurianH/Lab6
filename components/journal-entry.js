@@ -73,6 +73,7 @@ class JournalEntry extends HTMLElement {
      */
     
     // CODE GOES HERE
+    this.setAttribute('entry', entry);
 
     if (entry.image) {
       let entryImage;
@@ -84,11 +85,11 @@ class JournalEntry extends HTMLElement {
        */
 
       // CODE GOES HERE vvv
-
-
-
-
-
+      entryImage = document.createElement('img');
+      entryImage.className = 'entry-image';
+      entryImage.src = entry.image.src;
+      entryImage.alt = entry.image.alt;
+      this.shadowRoot.appendChild(entryImage);
       // CODE GOES HERE ^^^
 
       /* ------------- do not edit this code, it is for your debugging purposes ------------- */
