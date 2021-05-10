@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let img = document.createElement('img');
         img.setAttribute('class', 'entry-image');
-        img.setAttribute('src', entry.img.src);
-        img.setAttribute('alt', entry.img.alt);
+        img.src = entry.img.src;
+        img.alt = entry.img.alt;
 
         shadowDom.appendChild(img);
 
