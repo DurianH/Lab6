@@ -31,10 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         newPost = document.createElement('journal-entry');
         newPost.entry = entry;
+        newPost.entry.audio = entry.audio;
 
         main.append(newPost);
-
-        console.log(newPost);
 
         // CODE GOES HERE ^^^
 
