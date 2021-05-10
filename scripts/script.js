@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         newPost = document.createElement('journal-entry');
         newPost.entry = entry;
-        newPost.entry.audio = entry.audio;
+        newPost.entryImage = entry.image;
 
         main.append(newPost);
 
