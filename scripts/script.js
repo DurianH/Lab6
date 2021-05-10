@@ -32,8 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
         newPost = document.createElement('journal-entry');
         newPost.entry = entry;
         
-        let image = document.getElementsByTagName('entry-image');
+        let image = document.createElement('entry-image');
         image.src = entry.image.src;
+        image.alt = 'some alternate text';
+        newPost.append(image);
 
         main.append(newPost);
 
