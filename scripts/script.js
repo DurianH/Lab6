@@ -32,6 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
         newPost = document.createElement('journal-entry');
         newPost.entry = entry;
 
+        let title = document.createElement('h2');
+        title = entry.title;
+
         let img = document.createElement('img');
         img.className = 'entry-image';
         img.src = entry.image.src;
@@ -41,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
           let audio = document.createElement('audio');
           audio.className = 'entry-audio';
           audio.src = entry.audio.src;
+          audio.controls = true;
         }
 
         main.append(newPost);
