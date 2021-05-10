@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         img.alt = entry.image.alt;
 
         main.append(newPost);
+        
 
         // CODE GOES HERE ^^^
 
