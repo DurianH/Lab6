@@ -73,6 +73,8 @@ class JournalEntry extends HTMLElement {
      */
     
     // CODE GOES HERE
+    let article = this.shadowRoot.innerHTML;
+    console.log(article);
     let title = document.createElement('h2');
     title.innerHTML = entry.title;
     this.shadowRoot.append(title);
