@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         newPost.entry = entry;
 
         let img = document.createElement('img');
-        img.addClass('entry-image');
+        img.className = 'entry-image';
         img.src = entry.image.src;
         img.alt = entry.image.alt;
         newPost.append(img);
