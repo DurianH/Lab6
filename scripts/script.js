@@ -32,16 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
         newPost = document.createElement('journal-entry');
         newPost.entry = entry;
 
-        let shadowDom = newPost.shadowRoot;
-
         let img = document.createElement('img');
         img.className = 'entry-image';
         img.src = entry.image.src;
         img.alt = entry.image.alt;
 
-        let audio = document.createElement('audio');
-        audio.className = 'entry-audio';
-        audio.src = entry.audio.src;
+        if(entry.audio) {
+          let audio = document.createElement('audio');
+          audio.className = 'entry-audio';
+          audio.src = entry.audio.src;
+        }
 
         main.append(newPost);
 
