@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         newPost = document.createElement('journal-entry');
         newPost.entry = entry;
 
+        /*
         let shadowDom = newPost.shadowRoot;
 
         let img = document.createElement('img');
@@ -39,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = entry.image.src;
         img.alt = entry.image.alt;
         shadowDom.appendChild(img);
+        */
 
         main.append(newPost);
 
